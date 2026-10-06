@@ -15,4 +15,4 @@ Please find initial overview and project direction in [Week 1 Meeting Notes](mee
 
 
 #### Current Status
-The project is currenlty in the first research and problem definition phase
+The project is currently in the research and problem-definition stage.
