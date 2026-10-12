@@ -14,3 +14,12 @@
 - Consider if Llechfan is the best practical use case or whether another project could demonstrate the project better
 - Meeting prep
 - COMMIT PROGRESS AND MAKE REPO PRIVATE - DONT FORGET - I FORGOT
+
+## Week 3
+- Finalise aims and objectives
+- Create an outline of project deliverables
+- Find 5 additional sources
+- Expand on the annotated bibliography
+- Correct citation formatting
+- Look into Gantt charts, critical paths, and contingency plans
+- Commit progress to the repo
