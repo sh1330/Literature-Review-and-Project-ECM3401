@@ -74,7 +74,7 @@ A build is a planned configuration of items and ability upgrades for a particula
 	- Develop user stories, use cases, and measurable acceptance criteria
 	- Validate requirements through perspectives beyond my own by reviewing the stakeholders, and their view points by utilising user stories, and use cases
 - ###### System Design and Data Modelling
-	- Design relationships between users, heroes, items , builds, revisions and patches
+	- Design relationships between users, heroes, items , builds, revisions and patches (I especially think the storing of the items will be quite challenging due to there being a lot of different effects/abilities different items can have e.g. passive items, active items).
 	- Preserve historical revisions while maintaining data integrity
 	- Represent forks and their relationships to original builds
 	- Determine how patch changes affect existing and historical configurations (This one might be particularly tricky due to how items interact with each other, for example a low tier item might get a small decrease in its stats but that small decrease significantly reduces its scalability later in the game)
