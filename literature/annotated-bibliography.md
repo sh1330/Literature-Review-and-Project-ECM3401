@@ -28,4 +28,42 @@ This paper introduces HULA, a human in the loop software development agent frame
 The framework was deployed internally at Atlassian and evaluated using SWE-bench and real tasks. In practice, 82% of generated plans were approved by developers, but only 25% of generated code changes were raised as pull requests. Developers also reported that the generated code was generally easy to modify and understand , but concerns around incorrect or incomplete code were raised. For this project, HULA is going to be relevant when investigating human oversight and guardrails.
 A limitation on this paper is that the study was based around Atlassian's internal development environment and relies on GPT-4, therefore their findings may not generalise to other models or other environments.
 
-still need to annotate the new 5
+#### Hong, S. et al. - MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework
+https://arxiv.org/pdf/2308.00352
+This paper introduces MetaGPT, a multi-agent framework that uses predefined roles and Standard Operating Procedures (SOPs) to structure software development. Different agents are assigned roles such as project manager, architect and engineer, with each responsible for specific tasks. The researchers compared MetaGPT against other multi-agent systems and found that using structured processes helped improve coordination between agents and reduce errors.
+
+For this project, MetaGPT will be useful when looking at how established SWE practices can be used to structure an agentic development workflow. It also provides an example of how assigning responsibilities and following predefined processes can influence agent behaviour.
+
+A limitation for this paper is that it focuses mainly on communication and coordination between multiple AI agents, rather than how human developers should oversee their work. Therefore, more research is needed into human oversight and approval stages.
+
+#### Zeng, Z. et al. - Benchmarking and Studying the LLM-based Agent System in End-to-End Software Development
+https://arxiv.org/pdf/2511.04064
+This paper investigates how different agent architectures and development workflows affect performance in end-to-end software development. The researchers developed E2EDevBench, a benchmark for evaluating agents on software development tasks, and compared three different agent configurations. They evaluated the agents using automated testing and requirements satisfaction, finding that agents satisfied around 50% of the requirements, with problems often caused by missing requirements and insufficient verification.
+
+For this project, the paper will be useful when looking at how to design and conduct experiments comparing different agentic development approaches. It provides examples of how performance can be measured using functional correctness and requirements satisfaction, as well as how experimental conditions can be controlled.
+
+A limitation for this paper is that it mainly compares agent architectures rather than investigating the effects of human oversight and guardrails. It also uses LLMs to evaluate some requirements, which may affect the reliability of the results.
+
+#### Wang, H., Poskitt, C. M. and Sun, J. - AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents
+https://arxiv.org/pdf/2503.18666
+This paper introduces AgentSpec, a framework that allows developers to define and enforce restrictions on what AI agents can do during execution. Rather than relying only on instructions given to the agent, AgentSpec uses predefined rules to monitor and prevent certain actions. The researchers tested the framework across different environments, including code execution, and found that it prevented over 90% of unsafe executions in the code-agent tests.
+
+For this project, AgentSpec will be useful when investigating how guardrails can be implemented and enforced within an agentic development workflow. It shows how restrictions can be actively enforced rather than simply relying on an agent to follow instructions.
+
+A limitation for this paper is that it mainly focuses on preventing unsafe agent actions, rather than whether the agent follows good SWE practices or produces high-quality code. Therefore, other methods would be needed to evaluate the quality of the development process.
+
+#### Cihan, U. et al. - Automated Code Review in Practice
+https://arxiv.org/pdf/2412.18531
+This paper investigates the use of LLM-based automated code review in a real software development environment. The researchers analysed 4,335 pull requests across three projects, with 1,568 receiving automated reviews. They found that 73.8% of automated review comments were resolved, but pull requests generally took longer to complete. The automated reviews also sometimes produced incorrect or unnecessary feedback.
+
+For this project, the paper will be useful when investigating how AI-generated code should be reviewed and approved before being integrated into a project. It also shows some of the potential benefits and problems with automated code review, which could help when deciding where human review and approval should be required in the development workflow.
+
+A limitation for this paper is that it focuses on automated code review within a particular development environment, so the results may not apply to other projects. Also, resolving review comments does not necessarily mean that the resulting code is correct or of better quality.
+
+#### Pasquale, L. et al. - Exploring the Use of LLMs for Requirements Specification in an IT Consulting Company
+https://arxiv.org/pdf/2507.19113
+This paper investigates how LLMs can be used to generate software requirements specifications and user stories from existing documentation in an IT consulting company. The researchers compared requirements produced by three LLMs against those written by human analysts. They found that LLMs could reduce the time and effort required to produce requirements documents, but the quality of the results depended on the information provided and often required human revision.
+
+For this project, the paper will be useful when investigating which parts of requirements engineering can be delegated to an AI agent and which should remain human-led. It will also help when deciding how requirements should be reviewed and approved before implementation begins.
+
+A limitation for this paper is that it focuses on generating requirements from information that has already been collected, rather than the whole requirements engineering process. The study was also carried out within a single company, so the results may not generalise to other development environments.
